@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import NxWelcome from './NxWelcome.vue';
+import Dashboard from './dashboard/Dashboard.vue';
+
 </script>
 
 <template>
-  <NxWelcome title="vue-i18n" />
+  <Dashboard />
 </template>
