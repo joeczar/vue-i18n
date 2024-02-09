@@ -1,6 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -14,7 +17,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@fobizz/feature/overview": ["libs/features/overview/src/index.ts"],
+      "@fobizz/ui-lib": ["libs/shared-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

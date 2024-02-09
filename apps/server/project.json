@@ -1,0 +1,50 @@
+{
+  "root": "apps/server",
+  "sourceRoot": "apps/server",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "rails server",
+        "cwd": "apps/server"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "rake assets:precompile"
+          },
+          {
+            "command": "rake db:migrate"
+          }
+        ],
+        "parallel": false
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "rake test",
+        "cwd": "apps/server"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "rubocop",
+        "cwd": "apps/server"
+      }
+    },
+    "bundle": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bundle install",
+        "cwd": "apps/server"
+      }
+    }
+  },
+  "tags": []
+}

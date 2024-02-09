@@ -6,11 +6,20 @@
   "private": true,
   "dependencies": {
     "@angular-architects/module-federation": "17.0.2",
+    "@nrwl/workspace": "^18.0.3",
     "@nx-plus/nuxt": "14.1.0",
+    "bootstrap": "5",
+    "bootstrap-icons": "^1.11.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3",
     "vue": "^3.3.4",
-    "vue-i18n": "^9.9.0"
+    "vue-i18n": "^9.9.0",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@nx-extend/strapi": "^9.0.1",
     "@nx/eslint": "18.0.2",
     "@nx/eslint-plugin": "18.0.2",
     "@nx/js": "18.0.2",
@@ -38,6 +47,7 @@
     "sass": "1.62.1",
     "typescript": "~5.3.2",
     "vite": "^5.0.0",
+    "vite-plugin-dts": "~2.3.0",
     "vitest": "^1.0.4",
     "vue-tsc": "^1.8.8"
   }

@@ -20,6 +20,7 @@
     <div class="messages">
       <h2>{{ t('dashboard.messagesTitle') }}</h2>
       <p v-for="msg in messages" :key="msg.id">{{ t(msg.contentKey, msg.variables) }}</p>
+      <IButton>Save</IButton>
     </div>
 
     <div class="footer">
@@ -31,6 +32,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n';
+import { IButton } from '@fobizz/ui-lib';
 const { t } = useI18n();
 
 
