@@ -19,6 +19,9 @@
     "baseUrl": ".",
     "paths": {
       "@fobizz/feature/overview": ["libs/features/overview/src/index.ts"],
+      "@fobizz/feature/quantum-display": [
+        "libs/features/QuantumDisplay/src/index.ts"
+      ],
       "@fobizz/ui-lib": ["libs/shared-ui/src/index.ts"]
     }
   },

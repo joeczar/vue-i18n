@@ -1,0 +1,8 @@
+{
+  "name": "QuantumDisplay",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/QuantumDisplay/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}
